@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>学生信息管理系统</title>
+	<style type="text/css">
+		body {
+			background-image: url(./123.jpg);
+			background-size: 100%;
+		}
+
+		.box {
+			display: table;
+			margin: 0 auto;
+		}
+
+		h2 {
+			text-align: center;
+		}
+
+		.add {
+			margin-bottom: 20px;
+		}
+
+		table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+		input {
+			border: none;
+			background-color: transparent;
+		}
+		select{
+			background-color: transparent;
+		}
+	</style>
+</head>
+
+<body>
+	<!--输出定制表单-->
+	<div class="box">
+		<h2>查找报名人员</h2>
+		<div class="add">
+			<form action="searchStudent.php" method="get" enctype="multipart/form-data">
+				<table border="1">
+					<tr>
+						<th>人员编号：</th>
+						<td><input type="text" name="id" size="25" value="" autofocus="autofocus"></td>
+					</tr>
+					<tr>
+						<th></th>
+						<td>
+							<input type="button" onClick="javascript :history.back(-1);" value="返回">&nbsp;&nbsp;&nbsp;
+							<input type="reset" value="重置">&nbsp;&nbsp;&nbsp;
+							<input type="submit" value="查找">&nbsp;&nbsp;&nbsp;
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>
